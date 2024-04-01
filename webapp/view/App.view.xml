@@ -1,0 +1,22 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.ui.demo.db.controller.App">
+	<Panel headerText="{i18n>panelHeaderText}" class="sapUiResponsiveMargin" width="auto">
+        <form:SimpleForm editable="true" layout="ColumnLayout">
+            <Label text="Product ID"/>
+            <Input value="{/product_id}" valueLiveUpdate="true" />
+            <Label text="Product Name"/>
+            <Input value="{/product_name}" valueLiveUpdate="true" />
+            <Label text="Product Image"/>
+            <Input value="{/product_img}" valueLiveUpdate="true" />
+            <Label text="Product Sell"/>
+            <Input value="{/product_sell}" valueLiveUpdate="true" />
+            <Label text="Product Cost"/>
+            <Input value="{/product_cost}" valueLiveUpdate="true" />
+            <Button text="Submit" press=".onSubmit"/>
+        </form:SimpleForm>
+		
+	</Panel>
+</mvc:View>
